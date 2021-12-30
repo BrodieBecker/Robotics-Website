@@ -77,3 +77,28 @@
 .navigation-footer {
     margin-top: 100px;
 }
+
+
+/* Media Query Styles for Mobile */
+@media (max-width: 1000px) {
+    .robot-selector {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .robot-selector > .button {
+        padding: 10px;
+    }
+    .alternating-robots {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .alternating-robots > .picture-left, .alternating-robots > .picture-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+}
