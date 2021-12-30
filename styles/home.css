@@ -1,0 +1,169 @@
+/* Paralaxes (set background image of a .paralax div in order to make it a paralax */
+.paralax {
+  padding: 100px;
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.alternating-content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(3, 40px 360px);
+  grid-gap: 5%;
+  padding-left: 5%;
+  width: 90%;
+  margin: auto;
+}
+
+#this-year-title {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+  padding: 0;
+}
+#this-year-text {
+  grid-column: 1;
+  grid-row: 2;
+  margin: 0;
+  padding: 0;
+  height: fit-content;
+}
+.countdown {
+  grid-column: 1;
+  grid-row: 2;
+  height: fit-content;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  color: rgb(0, 99, 166);
+}
+#countdown-title {
+  width: 100%;
+  text-align: center;
+}
+.Pwrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.countdown > .Pwrapper > .timerP {
+  width: 80px;
+  margin: 0;
+  text-align: center;
+  font-size: 1.5em;
+}
+#this-year-content {
+  grid-column: 2;
+  grid-row: 1/2;
+  justify-self: end;
+  margin-right: 75px;
+}
+#last-year-title {
+  grid-column: 2;
+  grid-row: 3;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  width: 90%;
+}
+#last-year-text {
+  grid-column: 2;
+  grid-row: 4;
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  text-align: right;
+}
+#last-year-content {
+  grid-column: 1;
+  grid-row: 3/4;
+  margin: 0;
+  padding: 0;
+}
+
+#join-us-title {
+  grid-column: 1;
+  grid-row: 5;
+  margin: 0;
+  padding: 0;
+  width: 90%;
+}
+#join-us-text {
+  grid-column: 1;
+  grid-row: 6;
+  margin: 0;
+  padding: 0;
+  width: 90%;
+}
+#join-us-text a{
+  text-decoration: none;
+  color: rgb(0, 99, 166);
+}
+#join-us-content {
+  grid-column: 2;
+  grid-row: 5/6;
+  margin-right: 75px;
+  padding: 0;
+  justify-self: end;
+}
+
+
+.team {
+  margin-top: 225px;
+}
+.team h2 {
+  text-align: center;
+}
+
+#team-picture {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.team-picture-wrapper {
+  overflow: hidden;
+  height: fit-content;
+}
+
+
+/* Mobile Styles */
+@media (max-width: 1000px) {
+
+  .alternating-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+  }
+
+  .alternating-content iframe {
+    padding: 0;
+    margin: 10px auto;
+  }
+
+  .alternating-title, .alternating-text {
+    text-align: center !important;
+    margin: 10px 0 !important;
+  }
+
+  .alternating-content h2, p, a {
+    text-align: center;
+  }
+
+  .team {
+     margin-top: 50px;
+  }
+
+  .countdown {
+    margin: 25px 0;
+  }
+}

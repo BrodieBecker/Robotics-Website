@@ -1,0 +1,9 @@
+.blog-wrapper iframe{
+    display: block;
+    width: 100%;
+    height: 1000px;
+}
+
+.blog-wrapper iframe > #WIX_ADS a {
+    opacity: 0 !important;
+}

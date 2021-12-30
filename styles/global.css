@@ -1,0 +1,33 @@
+html, body, iframe {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+h1, h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.75rem
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25em;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    transition: .6s;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 99, 166);
+  border-radius: 3px;
+}
+::-webkit-scrollbar:hover {
+    width: 15px;
+    background-color: darkgrey;
+}

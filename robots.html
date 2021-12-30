@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BFHS Robotics</title>
+  <link rel="icon" href="../images/RoboticsLogo.jpg" type="image/jpg">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/navigation-header.css">
+  <link rel="stylesheet" href="styles/navigation-footer.css">
+  <link rel="stylesheet" href="styles/robots.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Import Navigation HTML Doc -->
+  <div class="navigation-wrapper" id="f">
+    <iframe src="navigation/navigation-header.html"></iframe>
+  </div>
+  <script>
+    var windw = this;
+
+    $.fn.followTo = function (pos) {
+      var $this = this,
+        $window = $(windw);
+
+      $window.scroll(function (e) {
+        if ($window.scrollTop() > pos) {
+          $this.css({
+            position: 'fixed',
+            top: -225
+          });
+        } else {
+          $this.css({
+            position: 'absolute',
+            top: 0
+          });
+        }
+      });
+    };
+
+    $('#f').followTo(225);
+  </script>
+
+  <div class="block"></div>
+
+  <div class="robots-history">
+    <h2>The History of 2130 Robots</h2>
+    <p><b>Team Alpha+ 2130</b> was founded in 2007. Since then, we have built a unique robot every year. Each robot was
+      designed with a different task in mind. Every year, the competition
+      is completely different, so there is no hope of reusing one from a previous year.</p>
+  </div>
+
+  <div class="robot-selector">
+      <div class="button">
+        <a href="#202021">2020/21 <br> Swolenoid</a>
+      </div>
+      
+      <div class="button">
+        <a href="#2019">2019 <br> Libra</a>
+      </div>
+
+      <div class="button">
+        <a href="#2018">2018 <br> Pheonix</a>
+      </div>
+
+      <div class="button">
+        <a href="#2017">2017 <br> Pheonix</a>
+      </div>
+
+      <div class="button">
+        <a href="#2016">2016 <br> Pheonix</a>
+      </div>
+
+      <div class="button">
+        <a href="#2015">2015 <br> Pheonix</a>
+      </div>
+
+      <div class="button">
+        <a href="#2014">2014 <br> Agnis</a>
+      </div>
+
+      <div class="button">
+        <a href="#2013">2013 <br> Pheonix</a>
+      </div>
+
+      <div class="button">
+        <a href="#2012">2012 <br> Pheonix</a>
+      </div>
+
+      <div class="button">
+        <a href="#2011">2011 <br> Pheonix</a>
+      </div>
+
+      <div class="button">
+        <a href="#2010">2010 <br> Pheonix</a>
+      </div>
+
+      <div class="button">
+        <a href="#2009">2009 <br> Pheonix</a>
+      </div>
+
+      <div class="button">
+        <a href="#2008">2008 <br> Pheonix</a>
+      </div>
+
+      <div class="button">
+        <a href="#2007">2007 <br> Pheonix</a>
+      </div>
+  </div>
+
+  <div class="alternating-robots">
+    <div class="picture-right" id="202021">
+      <div class="text">
+        <h2>2020/21 Swolenoid</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit necessitatibus voluptatem fuga deserunt quis
+          consectetur dolorum temporibus facilis excepturi quos.</p>
+      </div>
+      <img src="images/homeParalax/Swolenoid (Large).JPG">
+    </div>
+
+    <div class="picture-left" id="2019">
+      <div class="text">
+        <h2>2019 Libra</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, repellendus? Libero omnis illo
+          repudiandae molestias quibusdam possimus fuga, ipsum voluptatibus.</p>
+      </div>
+      <img src="images/homeParalax/Agnis Fair (Large).JPG">
+    </div>
+
+    <div class="picture-right" id="2018">
+      <div class="text">
+        <h2>2018 Pheonix</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit deserunt eaque optio! Reiciendis architecto
+          cupiditate debitis reprehenderit error iure accusantium!</p>
+      </div>
+      <img src="images/homeParalax/Agnis Fair (Large).JPG">
+    </div>
+
+    <div class="picture-left" id="2017">
+      <div class="text">
+        <h2>Filler for all years</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores tempore facilis unde aut cumque
+          voluptate expedita sed ullam eligendi quia!</p>
+      </div>
+      <img src="images/homeParalax/Agnis Fair (Large).JPG">
+  </div>
+
+  <div class=" picture-right" id="2016">
+      <div class="text">
+        <h2>Filler for all years</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores tempore facilis unde aut cumque
+          voluptate expedita sed ullam eligendi quia!</p>
+      </div>
+      <img src="images/homeParalax/Agnis Fair (Large).JPG" alt="">
+    </div>
+
+    <div class="picture-left" id="2015">
+      <div class="text">
+        <h2>Filler for all years</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores tempore facilis unde aut cumque
+          voluptate expedita sed ullam eligendi quia!</p>
+      </div>
+      <img src="images/homeParalax/Agnis Fair (Large).JPG" alt="">
+    </div>
+
+    <div class="picture-right" id="2014">
+      <div class="text">
+        <h2>2014 Agnis</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores tempore facilis unde aut cumque
+          voluptate expedita sed ullam eligendi quia!</p>
+      </div>
+      <img src="images/homeParalax/Agnis Fair (Large).JPG" alt="">
+    </div>
+
+    <div class="picture-left" id="2013">
+      <div class="text">
+        <h2>Filler for all years</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores tempore facilis unde aut cumque
+          voluptate expedita sed ullam eligendi quia!</p>
+      </div>
+      <img src="images/homeParalax/Agnis Fair (Large).JPG" alt="">
+    </div>
+
+    <div class="picture-right" id="2012">
+      <div class="text">
+        <h2>Filler for all years</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores tempore facilis unde aut cumque
+          voluptate expedita sed ullam eligendi quia!</p>
+      </div>
+      <img src="images/homeParalax/Agnis Fair (Large).JPG" alt="">
+    </div>
+
+    <div class="picture-left" id="2011">
+      <div class="text">
+        <h2>Filler for all years</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores tempore facilis unde aut cumque
+          voluptate expedita sed ullam eligendi quia!</p>
+      </div>
+      <img src="images/homeParalax/Agnis Fair (Large).JPG" alt="">
+    </div>
+
+    <div class="picture-right" id="2010">
+      <div class="text">
+        <h2>Filler for all years</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores tempore facilis unde aut cumque
+          voluptate expedita sed ullam eligendi quia!</p>
+      </div>
+      <img src="images/homeParalax/Agnis Fair (Large).JPG" alt="">
+    </div>
+
+    <div class="picture-left" id="2009">
+      <div class="text">
+        <h2>Filler for all years</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores tempore facilis unde aut cumque
+          voluptate expedita sed ullam eligendi quia!</p>
+      </div>
+      <img src="images/homeParalax/Agnis Fair (Large).JPG" alt="">
+    </div>
+
+    <div class="picture-right" id="2008">
+      <div class="text">
+        <h2>Filler for all years</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores tempore facilis unde aut cumque
+          voluptate expedita sed ullam eligendi quia!</p>
+      </div>
+      <img src="images/homeParalax/Agnis Fair (Large).JPG" alt="">
+    </div>
+
+    <div class="picture-left" id="2007">
+      <div class="text">
+        <h2>Filler for all years</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores tempore facilis unde aut cumque
+          voluptate expedita sed ullam eligendi quia!</p>
+      </div>
+      <img src="images/homeParalax/Agnis Fair (Large).JPG" alt="">
+    </div>
+  </div>
+
+  <div id="navFooter" class="navigation-footer">
+    <iframe src="navigation/navigation-footer.html"></iframe>
+  </div>
+</body>
+
+</html>
