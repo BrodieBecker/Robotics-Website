@@ -17,7 +17,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -31,38 +33,41 @@
   </div>
   <script>
     var windw = this;
+    var width = $( window ).width();
 
-    $.fn.followTo = function (pos) {
-      var $this = this,
-        $window = $(windw);
+    // if($width < 550){
+      $.fn.followTo = function (pos) {
+        var $this = this,
+          $window = $(windw);
 
-      $window.scroll(function (e) {
-        if ($window.scrollTop() > pos) {
-          $this.css({
-            position: 'fixed',
-            top: -225
-          });
-        } else {
-          $this.css({
-            position: 'absolute',
-            top: 0
-          });
-        }
-      });
-    };
+        $window.scroll(function (e) {
+          if ($window.scrollTop() > pos) {
+            $this.css({
+              position: 'fixed',
+              top: -225
+            });
+          }else{
+            $this.css({
+              position: 'absolute',
+              top: 0
+            });
+          }
+        });
+      };
 
-    $('#f').followTo(225);
+      $('#f').followTo(225);
+    //  }
   </script>
 
   <div class="block"></div>
 
   <div class="alternating-content">
     <h2 id="this-year-title" class="alternating-title">Upcoming Season: <b>First Forward</b>!</h2>
-    <p id="this-year-text" class="alternating-text">This year's game is called <b>First Forward</b>. It focuses on
+    <p id="this-year-text" class="alternating-text">This year's game is called <b>First Forwar</b>. It focuses on
       innovating transportation,
       sponsored by Qualcomm. We plan to compete at in-person events, if they are avaliable.</p>
     <div class="countdown">
-      <h2 id="countdown-title">Season Opens In:</h2>
+      <h2 id="countdown-title">Remaining Build Time</h2>
       <div class="Pwrapper">
         <p class="timerP" id="days"></p>
         <p class="timerP" id="hours"></p>
@@ -72,7 +77,7 @@
     </div>
     <script>
       // Set the date we're counting down to
-      var countDownDate = new Date("Jan 8, 2022 9:00:00").getTime();
+      var countDownDate = new Date("Mar 19, 2022 12:00:00").getTime();
 
       // Update the count down every 1 second
       var x = setInterval(function () {
@@ -119,15 +124,19 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen></iframe>
 
-      <h2 id="join-us-title" class="alternating-title">Join Us!</h2>
-      <p id="join-us-text" class="alternating-text">Alpha+ 2130 is always eagerly searching for new members.
-        We are open to all High School students, and there is no requirement for previous knowledge, experience,
-         or training. We have several sub-teams; the buisiness team, the programming team, the build team, the design team, and
-        the electrical team. New members are welcomed and appreciated.<br><br>
-        If you are interested in joining our team, or just learning more, contact us <a href="contactUs.html">here</a> 
-        or visit us on <a href="#navFooter">social media</a>.
-      </p>
-        <iframe id="join-us-content" width="560" height="315" src="https://www.youtube.com/embed/v5YpCwwNwFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2 id="join-us-title" class="alternating-title">Join Us!</h2>
+    <p id="join-us-text" class="alternating-text">Alpha+ 2130 is always eagerly searching for new members.
+      We are open to all High School students, and there is no requirement for previous knowledge, experience,
+      or training. We have several sub-teams; the buisiness team, the programming team, the build team, the design team,
+      and
+      the electrical team. New members are welcomed and appreciated.<br><br>
+      If you are interested in joining our team, or just learning more, contact us <a href="contactUs.html">here</a>
+      or visit us on <a href="#navFooter">social media</a>.
+    </p>
+    <iframe id="join-us-content" width="560" height="315" src="https://www.youtube.com/embed/v5YpCwwNwFo"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
   </div>
 
   <div class="team">

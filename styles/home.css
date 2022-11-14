@@ -148,6 +148,7 @@
   .alternating-content iframe {
     padding: 0;
     margin: 10px auto;
+    width: 100%;
   }
 
   .alternating-title, .alternating-text {

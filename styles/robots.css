@@ -26,14 +26,15 @@
 
 .robot-selector > .button a {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 99, 166);
     font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
     font-weight: 400;
     transition: .25s;
 }
 
-.robot-selector > .button a:hover {
-    color: rgb(0, 99, 166);
+.robot-selector > .button:hover {
+    background-color: lightgray;
+    border-radius: 8px;
 }
 
 /* ALTERNATING STYLES */
